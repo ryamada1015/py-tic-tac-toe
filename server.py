@@ -5,7 +5,7 @@ import pickle
 from xml.etree.ElementTree import TreeBuilder
 from game import Game
 
-HOST = "10.0.0.47"
+HOST = "localhost"
 PORT = 5555
 
 connected = set()  # store ip addr's of connected clients
