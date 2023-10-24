@@ -141,7 +141,7 @@ def main():
                 mouseY = event.pos[0]
                 mouseX = event.pos[1]
 
-                x = mouseX // 100  # divide by 100 and round down
+                x = mouseX // 100  # foor division by 100
                 y = mouseY // 100
 
                 mark_cell(x, y, player)

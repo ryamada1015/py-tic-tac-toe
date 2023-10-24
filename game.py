@@ -1,12 +1,8 @@
 """game.py for holding information about the game"""
 
-from inspect import formatargvalues
-from re import X
 import numpy as np
 
-
 ROWS, COLS = 3, 3
-
 
 class Game:
     def __init__(self, id):

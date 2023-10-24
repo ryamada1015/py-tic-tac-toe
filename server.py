@@ -5,7 +5,7 @@ import pickle
 from xml.etree.ElementTree import TreeBuilder
 from game import Game
 
-HOST = "10.0.0.47"
+HOST = "localhost"
 PORT = 5555
 
 connected = set()  # store ip addr's of connected clients
@@ -57,7 +57,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     try:
         s.bind((HOST, PORT))
     except socket.error as e:
-        str(e)
+        print(str(e))
 
     s.listen(2)
     print("Waiting for a connection, Server Started")
